@@ -1,0 +1,27 @@
+@use 'helpers' as *;
+
+:root {
+    --color-white: #FFFFFF;
+    --color-dark: #000000;
+    --color-yellow: #F8F200;
+    --color-light-blue: #52BEDC;
+
+    --font-family-base: 'Roboto', sans-serif;
+    --font-family-accent: 'Archangelsk', sans-serif;
+
+    --container-width: #{rem(1280)};
+	--container-padding-inline: #{rem(12)};
+
+    --border: #{rem(1)} solid var(var(--color-white));
+    --border-dashed: #{rem(1)} dashed var(var(--color-white));
+
+    --border-radius-big: #{rem(61)} #{rem(61)};
+    --border-radius-little: #{rem(59)} #{rem(59)};
+
+    --transition-duration: 0.3s;
+
+    @include tablet {
+        --container-width: #{rem(952)};
+    }
+
+}
