@@ -10,4 +10,16 @@
     color: var(--color-yellow);
     line-height: 1.67;
     font-weight: 700;
+
+    &.button-accent {
+        color: var(--color-dark);
+        background-color: var(--color-yellow);
+        max-width: rem(192);
+        font-size: rem(18);
+    }
+    
+    &.button-dark {
+        max-width: rem(192);
+        font-size: rem(18);
+    }
 }

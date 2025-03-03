@@ -346,6 +346,16 @@ a[class] {
   line-height: 1.67;
   font-weight: 700;
 }
+.button.button-accent {
+  color: var(--color-dark);
+  background-color: var(--color-yellow);
+  max-width: 12rem;
+  font-size: 1.125rem;
+}
+.button.button-dark {
+  max-width: 12rem;
+  font-size: 1.125rem;
+}
 
 .section__banner {
   display: flex;
@@ -381,7 +391,6 @@ a[class] {
   max-width: 39rem;
   width: 100%;
   padding: 4.375rem;
-  display: flex;
   background-color: var(--color-yellow);
   -webkit-clip-path: polygon(5% 0, 80% 0%, 100% 0, 100% 90%, 95% 100%, 20% 100%, 0 100%, 0 10%);
           clip-path: polygon(5% 0, 80% 0%, 100% 0, 100% 90%, 95% 100%, 20% 100%, 0 100%, 0 10%);
