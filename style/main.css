@@ -359,9 +359,9 @@ a[class] {
 
 .section__banner {
   display: flex;
-  height: 62.5rem;
   flex-direction: column;
   justify-content: space-between;
+  height: 62.5rem;
   background: url(../images/section-banner.jpg) center/cover no-repeat;
 }
 

@@ -3,9 +3,9 @@
 .section {
     &__banner {
         display: flex;
-        height: rem(1000);
         flex-direction: column;
         justify-content: space-between;
+        height: rem(1000);
         background: url(../images/section-banner.jpg) center / cover no-repeat;
     }
 }
