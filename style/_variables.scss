@@ -16,7 +16,7 @@
     --border-dashed: #{rem(1)} dashed var(var(--color-white));
 
     --border-radius-big: #{rem(61)} #{rem(61)};
-    --border-radius-little: #{rem(59)} #{rem(59)};
+    --border-radius-little: #{rem(59)} #{rem(0)};
 
     --transition-duration: 0.3s;
 

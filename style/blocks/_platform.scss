@@ -1,0 +1,30 @@
+@use '../helpers' as *;
+
+.platform {
+
+    &__body {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+
+    &__platform-all {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        row-gap: rem(25);
+        max-width: rem(624);
+        width: 100%;
+        padding: rem(70);
+        display: flex;
+        background-color: var(--color-yellow);
+        clip-path: polygon(5% 0, 80% 0%, 100% 0, 100% 90%, 95% 100%, 20% 100%, 0 100%, 0 10%);
+    }
+
+    &__title {
+        font-size: fluid(62, 30);
+        color: var(--color-dark);
+        font-weight: 400;
+        line-height: 1.2;
+    }
+}

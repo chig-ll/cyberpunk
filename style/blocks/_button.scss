@@ -1,0 +1,13 @@
+@use '../helpers' as *;
+
+.button {
+    @include flex-center;
+
+    max-width: rem(272);
+    background-color: var(--color-dark);
+    padding: 19px 50px;
+    font-size: rem(24);
+    color: var(--color-yellow);
+    line-height: 1.67;
+    font-weight: 700;
+}

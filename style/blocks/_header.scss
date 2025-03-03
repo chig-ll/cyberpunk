@@ -1,0 +1,18 @@
+@use '../helpers' as *;
+
+.header {
+    &__body-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: rem(24);
+    }
+
+    &__menu {
+        &-list {
+            display: inline-flex;
+            column-gap: rem(40);
+            align-items: center;
+        }
+    }
+}

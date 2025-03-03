@@ -239,7 +239,7 @@ svg * {
   --border: 0.0625rem solid var(var(--color-white));
   --border-dashed: 0.0625rem dashed var(var(--color-white));
   --border-radius-big: 3.8125rem 3.8125rem;
-  --border-radius-little: 3.6875rem 3.6875rem;
+  --border-radius-little: 3.6875rem 0rem;
   --transition-duration: 0.3s;
 }
 @media (width <= 63.99875rem) {
@@ -262,7 +262,8 @@ svg * {
   border: 0 !important;
   padding: 0 !important;
   white-space: nowrap !important;
-  clip-path: inset(100%) !important;
+  -webkit-clip-path: inset(100%) !important;
+          clip-path: inset(100%) !important;
   clip: rect(0 0 0 0) !important;
   overflow: hidden !important;
 }
@@ -280,6 +281,7 @@ svg * {
 }
 
 body {
+  font-family: var(--font-family-base);
   font-size: 1rem;
   color: var(--color-dark);
 }
@@ -332,4 +334,61 @@ a[class] {
   transition-duration: 0s !important;
 }
 
-/*# sourceMappingURL=main.css.map */
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 17rem;
+  background-color: var(--color-dark);
+  padding: 19px 50px;
+  font-size: 1.5rem;
+  color: var(--color-yellow);
+  line-height: 1.67;
+  font-weight: 700;
+}
+
+.section__banner {
+  display: flex;
+  height: 62.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url(../images/section-banner.jpg) center/cover no-repeat;
+}
+
+.header__body-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+.header__menu-list {
+  display: inline-flex;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+  align-items: center;
+}
+
+.platform__body {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.platform__platform-all {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  row-gap: 1.5625rem;
+  max-width: 39rem;
+  width: 100%;
+  padding: 4.375rem;
+  display: flex;
+  background-color: var(--color-yellow);
+  -webkit-clip-path: polygon(5% 0, 80% 0%, 100% 0, 100% 90%, 95% 100%, 20% 100%, 0 100%, 0 10%);
+          clip-path: polygon(5% 0, 80% 0%, 100% 0, 100% 90%, 95% 100%, 20% 100%, 0 100%, 0 10%);
+}
+.platform__title {
+  font-size: clamp(1.875rem, 1.475rem + 2vw, 3.875rem);
+  color: var(--color-dark);
+  font-weight: 400;
+  line-height: 1.2;
+}/*# sourceMappingURL=main.css.map */
