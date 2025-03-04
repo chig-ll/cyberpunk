@@ -491,43 +491,4 @@ a[class] {
   flex-direction: column;
   justify-content: space-between;
   row-gap: 2rem;
-}
-
-.event {
-  display: flex;
-  flex-direction: column;
-  color: var(--color-white);
-}
-.event__head {
-  display: flex;
-  flex-direction: column;
-}
-.event__title {
-  font-size: clamp(1.875rem, 1.475rem + 2vw, 3.875rem);
-  color: var(--color-white);
-  padding-block: 0.9375rem 1.5625rem;
-}
-.event__description {
-  max-width: 59.5rem;
-  width: 100%;
-  font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
-  font-weight: 400;
-}
-.event__description span {
-  color: var(--color-light-blue);
-  font-weight: 700;
-}
-.event__body {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  padding-block: 1.5625rem 4.375rem;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-}
-.event__form {
-  display: flex;
-  flex-direction: column;
-  row-gap: 35px;
-  flex-shrink: 0;
 }/*# sourceMappingURL=main.css.map */

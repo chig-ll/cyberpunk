@@ -1,47 +1,4 @@
 @use '../helpers' as *;
 
 .event {
-    display: flex;
-    flex-direction: column;
-    color: var(--color-white);
-
-    &__head {
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    &__title {
-        font-size: fluid(62, 30);
-        color: var(--color-white);
-        padding-block: rem(15) rem(25);
-    }
-
-    &__description {
-        max-width: rem(952);
-        width: 100%;
-        font-size: fluid(18, 16);
-        font-weight: 400;
-
-        & span {
-            color: var(--color-light-blue);
-            font-weight: 700;
-        }
-    }
-
-    &__body {
-        display: flex;
-        justify-content: space-between;
-        align-items: end;
-        padding-block: rem(25) rem(70);
-        column-gap: rem(32);
-    }
-
-    &__form {
-        display: flex;
-        flex-direction: column;
-        row-gap: 35px;
-        flex-shrink: 0;
-    }
-
 }
