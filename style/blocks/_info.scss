@@ -32,17 +32,39 @@
     }
 
     &__images {
-        &-slide {
-            display: flex;
-            justify-content: space-between;
-            column-gap: rem(32);
-        }
+        display: grid;
+        grid-template-columns: 35% 1fr;
+        gap: rem(32);
+        width: 100%;
 
-        &-one {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            row-gap: rem(32);
+        & img {
+            width: 100%;
+            height: 100%;
         }
     }
+
+    &__image {
+        &--big {
+            grid-column: 2/3;
+            grid-row: 1/3;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
 }
+
+// &__images {
+//     &-slide {
+//         display: flex;
+//         justify-content: space-between;
+//         column-gap: rem(32);
+//     }
+
+//     &-one {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         row-gap: rem(32);
+//     }
+// }

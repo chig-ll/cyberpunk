@@ -480,15 +480,20 @@ a[class] {
   color: var(--color-light-blue);
   font-weight: 700;
 }
-.info__images-slide {
-  display: flex;
-  justify-content: space-between;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+.info__images {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  gap: 2rem;
+  width: 100%;
 }
-.info__images-one {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  row-gap: 2rem;
+.info__images img {
+  width: 100%;
+  height: 100%;
+}
+.info__image--big {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
