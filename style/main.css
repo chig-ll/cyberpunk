@@ -232,6 +232,7 @@ svg * {
   --color-dark: #000000;
   --color-yellow: #F8F200;
   --color-light-blue: #52BEDC;
+  --color-gray: #777777;
   --font-family-base: "Roboto", sans-serif;
   --font-family-accent: "Archangelsk", sans-serif;
   --container-width: 80rem;
@@ -339,21 +340,24 @@ a[class] {
   justify-content: center;
   align-items: center;
   max-width: 17rem;
-  background-color: var(--color-dark);
+  width: 100%;
   padding: 19px 50px;
   font-size: 1.5rem;
-  color: var(--color-yellow);
   line-height: 1.67;
   font-weight: 700;
+  color: var(--color-yellow);
+  background-color: var(--color-dark);
 }
 .button.button-accent {
+  max-width: 12rem;
+  width: 100%;
+  font-size: 1.125rem;
   color: var(--color-dark);
   background-color: var(--color-yellow);
-  max-width: 12rem;
-  font-size: 1.125rem;
 }
 .button.button-dark {
   max-width: 12rem;
+  width: 100%;
   font-size: 1.125rem;
 }
 
@@ -361,7 +365,7 @@ a[class] {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 62.5rem;
+  height: 100vh;
   background: url(../images/section-banner.jpg) center/cover no-repeat;
 }
 
@@ -397,7 +401,47 @@ a[class] {
 }
 .platform__title {
   font-size: clamp(1.875rem, 1.475rem + 2vw, 3.875rem);
-  color: var(--color-dark);
   font-weight: 400;
   line-height: 1.2;
+  color: var(--color-dark);
+}
+
+.info {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  row-gap: 4.375rem;
+  padding-block: 4.375rem;
+}
+.info__head {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 1.5625rem;
+}
+.info__title {
+  font-size: clamp(1.875rem, 1.475rem + 2vw, 3.875rem);
+  color: var(--color-dark);
+}
+.info__description {
+  max-width: 60.75rem;
+  width: 100%;
+  font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
+  color: var(--color-gray);
+}
+.info__description span {
+  color: var(--color-light-blue);
+  font-weight: 700;
+}
+.info__images-slide {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.info__images-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 2rem;
 }/*# sourceMappingURL=main.css.map */

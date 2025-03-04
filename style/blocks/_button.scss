@@ -4,22 +4,25 @@
     @include flex-center;
 
     max-width: rem(272);
-    background-color: var(--color-dark);
+    width: 100%;
     padding: 19px 50px;
     font-size: rem(24);
-    color: var(--color-yellow);
     line-height: 1.67;
     font-weight: 700;
+    color: var(--color-yellow);
+    background-color: var(--color-dark);
 
     &.button-accent {
+        max-width: rem(192);
+        width: 100%;
+        font-size: rem(18);
         color: var(--color-dark);
         background-color: var(--color-yellow);
-        max-width: rem(192);
-        font-size: rem(18);
     }
     
     &.button-dark {
         max-width: rem(192);
+        width: 100%;
         font-size: rem(18);
     }
 }
