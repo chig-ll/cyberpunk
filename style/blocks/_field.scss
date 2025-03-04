@@ -11,5 +11,19 @@
         border: none;
         border-bottom: var(--border);
         background-color: var(--color-dark);
+
+        &-screen {
+            text-decoration: underline;
+        }
+    }
+
+    &__label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: rem(460);
+            padding-block: rem(40);
+            border: 1px dashed var(--color-gray);
     }
 }

@@ -2,6 +2,8 @@
 
 .header {
     &__logo {
+        max-width: rem(297);
+        width: 100%;
         flex-shrink: 0;
     }
 

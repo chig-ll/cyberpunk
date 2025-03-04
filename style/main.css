@@ -384,6 +384,18 @@ a[class] {
   border-bottom: var(--border);
   background-color: var(--color-dark);
 }
+.field__input-screen {
+  text-decoration: underline;
+}
+.field__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 28.75rem;
+  padding-block: 2.5rem;
+  border: 1px dashed var(--color-gray);
+}
 
 .section__banner {
   display: flex;
@@ -397,6 +409,8 @@ a[class] {
 }
 
 .header__logo {
+  max-width: 18.5625rem;
+  width: 100%;
   flex-shrink: 0;
 }
 .header__body-inner {
