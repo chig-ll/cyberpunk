@@ -1,0 +1,15 @@
+@use '../helpers' as *;
+
+.field {
+    &__input {
+        width: rem(470);
+        padding: 0;
+        padding-bottom: rem(13);
+        outline: none;
+        color: var(--color-white);
+        font-weight: 300;
+        border: none;
+        border-bottom: var(--border);
+        background-color: var(--color-dark);
+    }
+}

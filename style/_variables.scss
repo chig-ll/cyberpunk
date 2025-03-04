@@ -13,8 +13,8 @@
     --container-width: #{rem(1280)};
 	--container-padding-inline: #{rem(12)};
 
-    --border: #{rem(1)} solid var(var(--color-white));
-    --border-dashed: #{rem(1)} dashed var(var(--color-white));
+    --border: #{rem(1)} solid var(--color-gray);
+    --border-dashed: #{rem(1)} dashed var(--color-gray);
 
     --border-radius-big: #{rem(61)} #{rem(61)};
     --border-radius-little: #{rem(59)} #{rem(0)};

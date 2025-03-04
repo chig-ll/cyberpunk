@@ -8,4 +8,8 @@
         height: 100vh;
         background: url(../images/section-banner.jpg) center / cover no-repeat;
     }
+
+    &__event {
+        background-color: var(--color-dark);
+    }
 }
