@@ -482,7 +482,7 @@ a[class] {
 }
 .info__images {
   display: grid;
-  grid-template-columns: 35% 1fr;
+  grid-template-columns: 36% 1fr;
   gap: 2rem;
   width: 100%;
 }
