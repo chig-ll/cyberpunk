@@ -2,6 +2,7 @@
 
 .event {
     &__title {
+        padding-top: 15px;
         &::before {
             content: "";
             display: inline-block;
