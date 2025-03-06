@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PrettierConfiguration">
+    <option name="myConfigurationMode" value="AUTOMATIC" />
+    <option name="myFilesPattern" value="**/*.{js,ts,jsx,tsx,cjs,cts,mjs,mts,vue,css,scss,sass,html,astro}" />
+  </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="mirac" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <selected-state>
+          <State>
+            <id>Пользовательские</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+</project>
