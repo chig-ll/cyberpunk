@@ -1,6 +1,20 @@
 @use '../helpers' as *;
 
 .event {
+    &__title {
+        &::before {
+            content: "";
+            display: inline-block;
+            margin-right: rem(32);
+            background: url(../images/stock.svg) center / cover no-repeat;
+            width: rem(132);
+            height: rem(132);
+            top: 50%;
+            left: 50%;
+
+        }
+    }
+
     &__description {
         max-width: rem(952);
         width: 100%;

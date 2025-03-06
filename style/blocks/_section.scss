@@ -10,6 +10,20 @@
     }
 
     &__event {
+        margin-top: rem(70);
+        position: relative;
         background-color: var(--color-dark);
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: rem(70);
+            position: absolute;
+            z-index: 600;
+            translate: -50% -50%;
+            top: -17%;
+            left: 50%;
+            background: url(../images/decor.png) center / cover no-repeat;
+        }
     }
 }
