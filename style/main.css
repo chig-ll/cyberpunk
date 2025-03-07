@@ -552,6 +552,7 @@ a[class] {
   background-color: var(--color-dark);
   border: none;
   border-bottom: var(--border);
+  outline: none;
 }
 .event__form-file {
   display: flex;
