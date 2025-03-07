@@ -129,10 +129,78 @@
     </section>
     <section class="section section__event">
         <div class="event container">
-            <div class="event__head">
-                <h2 class="event__title">Играй и выигрывай!</h2>
-                <div class="event__description">
-                    <p>Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть консоль <span>Xbox Series X</span> или <span>Sony PlayStation 5!</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)</p>
+            <div class="event__grid">
+                <div class="event__head">
+                    <h2 class="event__title">Играй и выигрывай!</h2>
+                    <div class="event__description">
+                        <p>Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть консоль <span>Xbox Series X</span> или <span>Sony PlayStation 5!</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)</p>
+                    </div>
+                </div>
+                <div class="event__body">
+                    <form action="" class="event__form">
+                        <div class="event__form-name">
+                            <label class="event__form-label label visually-hidden" for="name">
+                                Как тебя зовут?
+                            </label>
+                            <input class="event__form-input input"
+                                   id="name"
+                                   name="name"
+                                   type="text"
+                                   placeholder="Как тебя зовут?"
+                                   title="Ваше имя"
+                                   required
+                            />
+                        </div>
+                        <div class="event__form-email">
+                            <label class="event__form-label label visually-hidden" for="email">Email</label>
+                            <input class="event__form-input input"
+                                   id="email"
+                                   name="email"
+                                   type="email"
+                                   placeholder="Email"
+                                   title="Ваша почта"
+                                   required
+                            />
+                        </div>
+                        <label class="event__form-file" for="file">
+                            <input class="event__input-file"
+                                         name="file"
+                                         type="file"
+                                   title="Прикрепить скриншот"
+                                   placeholder="Прикрепить скриншот"
+                                   required
+                            />
+                            .png / .jpg / .pdf
+                        </label>
+                        <button class="event__button button button-accent"
+                                type="submit"
+                        >
+                            Отправить
+                        </button>
+                        <label class="event__form-checkbox" for="personal data">
+                            <input class="event__input-checkbox"
+                                   name="personal data"
+                                   type="checkbox"
+                                   title="Согласен на обработку персональных данных"
+                                   required
+                            />
+                            Согласен на обработку персональных данных
+                        </label>
+                </form>
+                </div>
+                <div class="event__images">
+                    <img class="event__images-xbox" 
+                         src=".//images/xbox.png" 
+                         alt="xbox"
+                         width="460" height="456"
+                         loading="lazy"
+                    />
+                    <img class="event__images-playstation" 
+                         src=".//images/playstation.png" 
+                         alt="playstation"
+                         width="460" height="456"
+                         loading="lazy"
+                    />
                 </div>
             </div>
         </div>
