@@ -71,5 +71,34 @@
         justify-content: start;
         flex-direction: column;
         row-gap: rem(35);
+
+        &-input {
+            width: 100%;
+            padding-bottom: rem(13);
+            font-size: fluid(18, 16);
+            font-weight: 300;
+            color: var(--color-white);
+            background-color: var(--color-dark);
+            border: none;
+            border-bottom: var(--border);
+        }
+
+        &-file {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            font-size: rem(12);
+            color: var(--color-white);
+            border: var(--border-dashed);
+            padding-block: rem(40);
+            cursor: default;
+
+            &-input {
+                cursor: pointer;
+                font-size: fluid(18, 16);
+            }
+        }
     }
 }
