@@ -162,30 +162,39 @@
                                    required
                             />
                         </div>
-                        <label class="event__form-file" for="file">
-                            <input class="event__form-file-input"
+                        <div class="event__form-file">
+                            <label class="event__form-label" for="file">
+                                <span class="event__form-title">Прикрепить скриншот</span>
+                                <span class="event__form-formats">.png / .jpg / .pdf</span>
+                            </label>
+                            <input class="event__form-input visually-hidden"
                                    name="file"
                                    type="file"
                                    title="Прикрепить скриншот"
                                    placeholder="Прикрепить скриншот"
                                    required
                             />
-                            .png / .jpg / .pdf
-                        </label>
-                        <button class="event__button button button-accent"
-                                type="submit"
-                        >
-                            Отправить
-                        </button>
-                        <label class="event__form-checkbox" for="personal data">
-                            <input class="event__input-checkbox"
-                                   name="personal data"
-                                   type="checkbox"
-                                   title="Согласен на обработку персональных данных"
-                                   required
-                            />
-                            Согласен на обработку персональных данных
-                        </label>
+                        </div>
+                        <div class="event__form-submit">
+                            <button class="event__button button button-accent"
+                                    type="submit"
+                            >
+                                     Отправить
+                             </button>
+                             <div class="event__form-submit-checkbox">
+                                <label class="event__form-submit-label" for="personal-data">
+                                    <input class="event__form-submit-input"
+                                           id="personal-data"
+                                           name="personal data"
+                                           type="checkbox"
+                                           title="Согласен на обработку персональных данных"
+                                           required
+                                           checked
+                                    />
+                                 <span>Согласен на обработку персональных данных</span>
+                                </label>
+                            </div>
+                        </div>
                 </form>
                 </div>
                 <div class="event__images">

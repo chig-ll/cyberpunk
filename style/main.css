@@ -542,12 +542,13 @@ a[class] {
   justify-content: start;
   flex-direction: column;
   row-gap: 2.1875rem;
+  color: var(--color-white);
+  font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
+  font-weight: 300;
 }
 .event__form-input {
   width: 100%;
   padding-bottom: 0.8125rem;
-  font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
-  font-weight: 300;
   color: var(--color-white);
   background-color: var(--color-dark);
   border: none;
@@ -555,18 +556,19 @@ a[class] {
   outline: none;
 }
 .event__form-file {
+  display: inline-flex;
+}
+.event__form__label {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  font-size: 0.75rem;
-  color: var(--color-white);
-  border: var(--border-dashed);
-  padding-block: 2.5rem;
-  cursor: default;
+  row-gap: 0.4375rem;
+  padding: 0.625rem;
+  border: var(--border);
+  border-color: var(--color-dark);
 }
-.event__form-file-input {
-  cursor: pointer;
-  font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
+.event__form-submit {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.9375rem;
 }/*# sourceMappingURL=main.css.map */
