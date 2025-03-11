@@ -558,14 +558,21 @@ a[class] {
 .event__form-file {
   display: inline-flex;
 }
-.event__form__label {
+.event__form-label {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 0.4375rem;
   padding: 0.625rem;
-  border: var(--border);
+  -o-border-image: url("../images/border-dashed.png") 1/1px round;
+     border-image: url("../images/border-dashed.png") 1/1px round;
   border-color: var(--color-dark);
+}
+.event__form-title {
+  text-decoration: underline;
+}
+.event__form-formats {
+  font-size: 0.75rem;
 }
 .event__form-submit {
   display: flex;
