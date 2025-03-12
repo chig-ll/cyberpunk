@@ -168,8 +168,10 @@
                                 <span class="event__form-formats">.png / .jpg / .pdf</span>
                             </label>
                             <input class="event__form-input visually-hidden"
+                                   id="file"
                                    name="file"
                                    type="file"
+                                   accept=".png, .jpg, .pdf"
                                    title="Прикрепить скриншот"
                                    placeholder="Прикрепить скриншот"
                                    required
@@ -182,16 +184,16 @@
                                      Отправить
                              </button>
                              <div class="event__form-submit-checkbox">
-                                <label class="event__form-submit-label" for="personal-data">
-                                    <input class="event__form-submit-input"
-                                           id="personal-data"
-                                           name="personal data"
-                                           type="checkbox"
-                                           title="Согласен на обработку персональных данных"
-                                           required
-                                           checked
-                                    />
-                                 <span>Согласен на обработку персональных данных</span>
+                                <input class="event__form-submit-input visually-hidden"
+                                       id="personalData"
+                                       name="personal data"
+                                       type="checkbox"
+                                       title="Согласен на обработку персональных данных"
+                                       required
+                                       checked
+                                />
+                                <label class="event__form-submit-lable" for="personalData">
+                                    <span>Согласен на обработку персональных данных</span>
                                 </label>
                             </div>
                         </div>

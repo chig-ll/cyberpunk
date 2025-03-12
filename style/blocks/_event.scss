@@ -70,6 +70,7 @@
         display: flex;
         justify-content: start;
         flex-direction: column;
+        width: 100%;
         row-gap: rem(35);
         color: var(--color-white);
         font-size: fluid(18, 16);
@@ -91,10 +92,11 @@
 
         &-label {
             display: flex;
+            width: 100%;
             flex-direction: column;
             align-items: center;
             row-gap: rem(7);
-            padding: rem(10);
+            padding-block: rem(40);
             border-image: url("../images/border-dashed.png") 1 / 1px round;
             border-color: var(--color-dark);
         }
@@ -111,6 +113,36 @@
             display: flex;
             flex-direction: column;
             row-gap: rem(15);
+
+            &-checkbox {
+                display: inline-flex;
+                font-size: rem(12);
+            }
+
+            &-input + label {
+                display: flex;
+                position: relative;
+                align-items: center;
+                padding-left: 24px;
+                height: auto;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            &-input + label::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 10%;
+                border: var(--border);
+                
+                @include square(rem(14))
+            }
+
+            &-input:checked + label::before {
+                border-color: var(--color-accent);
+                background: url('../icons/icon-flag.svg') center / contain no-repeat;
+            }
         }
     }
 }

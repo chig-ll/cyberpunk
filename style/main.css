@@ -541,6 +541,7 @@ a[class] {
   display: flex;
   justify-content: start;
   flex-direction: column;
+  width: 100%;
   row-gap: 2.1875rem;
   color: var(--color-white);
   font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
@@ -560,10 +561,11 @@ a[class] {
 }
 .event__form-label {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   row-gap: 0.4375rem;
-  padding: 0.625rem;
+  padding-block: 2.5rem;
   -o-border-image: url("../images/border-dashed.png") 1/1px round;
      border-image: url("../images/border-dashed.png") 1/1px round;
   border-color: var(--color-dark);
@@ -578,4 +580,32 @@ a[class] {
   display: flex;
   flex-direction: column;
   row-gap: 0.9375rem;
+}
+.event__form-submit-checkbox {
+  display: inline-flex;
+  font-size: 0.75rem;
+}
+.event__form-submit-input + label {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-left: 24px;
+  height: auto;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.event__form-submit-input + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  border: var(--border);
+  width: 0.875rem;
+  height: 0.875rem;
+}
+.event__form-submit-input:checked + label::before {
+  border-color: var(--color-accent);
+  background: url("../icons/icon-flag.svg") center/contain no-repeat;
 }/*# sourceMappingURL=main.css.map */
