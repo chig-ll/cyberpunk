@@ -583,29 +583,18 @@ a[class] {
 }
 .event__form-submit-checkbox {
   display: inline-flex;
-  font-size: 0.75rem;
-}
-.event__form-submit-input + label {
-  display: flex;
-  position: relative;
   align-items: center;
-  padding-left: 24px;
-  height: auto;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  font-size: 0.75rem;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
 }
-.event__form-submit-input + label::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 10%;
+.event__form-submit-input[type=checkbox]:checked + .event__form-submit-custom {
+  background: url("../icons/icon-flag.svg") center/contain no-repeat;
+}
+.event__form-submit-custom {
+  display: inline-block;
   border: var(--border);
+  cursor: pointer;
   width: 0.875rem;
   height: 0.875rem;
-}
-.event__form-submit-input:checked + label::before {
-  border-color: var(--color-accent);
-  background: url("../icons/icon-flag.svg") center/contain no-repeat;
 }/*# sourceMappingURL=main.css.map */

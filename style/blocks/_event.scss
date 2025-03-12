@@ -116,32 +116,21 @@
 
             &-checkbox {
                 display: inline-flex;
-                font-size: rem(12);
-            }
-
-            &-input + label {
-                display: flex;
-                position: relative;
                 align-items: center;
-                padding-left: 24px;
-                height: auto;
-                cursor: pointer;
-                user-select: none;
+                font-size: rem(12);
+                column-gap: rem(10);
             }
 
-            &-input + label::before {
-                content: '';
-                position: absolute;
-                left: 0;
-                top: 10%;
-                border: var(--border);
-                
-                @include square(rem(14))
-            }
-
-            &-input:checked + label::before {
-                border-color: var(--color-accent);
+            &-input[type="checkbox"]:checked + &-custom {
                 background: url('../icons/icon-flag.svg') center / contain no-repeat;
+            }
+
+            &-custom {
+                display: inline-block;
+                border: var(--border);
+                cursor: pointer;
+                
+                @include square(rem(14));
             }
         }
     }
