@@ -30,7 +30,7 @@
             column-gap: rem(40);
             align-items: center;
             
-            @include mobile {
+            @include mobile-s {
                 column-gap: rem(28);
             }
         }

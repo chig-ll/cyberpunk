@@ -427,7 +427,7 @@ a[class] {
        column-gap: 2.5rem;
   align-items: center;
 }
-@media (width <= 47.99875rem) {
+@media (width <= 30.06125rem) {
   .header__menu-list {
     -moz-column-gap: 1.75rem;
          column-gap: 1.75rem;
