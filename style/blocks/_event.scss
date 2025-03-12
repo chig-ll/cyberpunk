@@ -119,6 +119,7 @@
                 align-items: center;
                 column-gap: rem(10);
                 font-size: rem(12);
+                
             }
 
             &-input[type="checkbox"]:checked + &-custom {
@@ -128,6 +129,7 @@
             &-custom {
                 display: inline-block;
                 border: var(--border);
+                flex-shrink: 0;
                 cursor: pointer;
                 
                 @include square(rem(14));

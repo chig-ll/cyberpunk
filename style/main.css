@@ -594,6 +594,7 @@ a[class] {
 .event__form-submit-custom {
   display: inline-block;
   border: var(--border);
+  flex-shrink: 0;
   cursor: pointer;
   width: 0.875rem;
   height: 0.875rem;
