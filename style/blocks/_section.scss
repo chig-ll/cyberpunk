@@ -6,7 +6,11 @@
         flex-direction: column;
         justify-content: space-between;
         height: 100vh;
-        background: url(../images/section-banner.jpg) center / cover no-repeat;
+        background: url('../images/section-banner.jpg') center / cover no-repeat;
+
+        @include mobile-s {
+            background: url('../images/section-banner-mob.png') center / cover no-repeat;
+        }
     }
 
     &__event {

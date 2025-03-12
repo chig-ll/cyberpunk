@@ -375,7 +375,12 @@ a[class] {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  background: url(../images/section-banner.jpg) center/cover no-repeat;
+  background: url("../images/section-banner.jpg") center/cover no-repeat;
+}
+@media (width <= 30.06125rem) {
+  .section__banner {
+    background: url("../images/section-banner-mob.png") center/cover no-repeat;
+  }
 }
 .section__event {
   margin-top: 4.375rem;
@@ -398,11 +403,23 @@ a[class] {
   width: 100%;
   flex-shrink: 0;
 }
+@media (width <= 47.99875rem) {
+  .header__logo {
+    max-width: 12.5rem;
+    height: 3.125rem;
+  }
+}
 .header__body-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 1.5rem;
+}
+@media (width <= 47.99875rem) {
+  .header__body-inner {
+    flex-direction: column;
+    row-gap: 0.625rem;
+  }
 }
 .header__menu-list {
   display: inline-flex;
@@ -410,14 +427,31 @@ a[class] {
        column-gap: 2.5rem;
   align-items: center;
 }
+@media (width <= 47.99875rem) {
+  .header__menu-list {
+    -moz-column-gap: 1.75rem;
+         column-gap: 1.75rem;
+  }
+}
 .header__menu-item {
   flex-shrink: 0;
+}
+@media (width <= 47.99875rem) {
+  .header__menu-image {
+    width: 1.5625rem;
+    height: 1.5625rem;
+  }
 }
 
 .platform__body {
   display: flex;
   justify-content: end;
   align-items: end;
+}
+@media (width <= 47.99875rem) {
+  .platform__body {
+    display: contents;
+  }
 }
 .platform__platform-all {
   display: flex;
@@ -430,6 +464,18 @@ a[class] {
   background-color: var(--color-yellow);
   -webkit-clip-path: polygon(5% 0, 80% 0%, 100% 0, 100% 90%, 95% 100%, 20% 100%, 0 100%, 0 10%);
           clip-path: polygon(5% 0, 80% 0%, 100% 0, 100% 90%, 95% 100%, 20% 100%, 0 100%, 0 10%);
+}
+@media (width <= 47.99875rem) {
+  .platform__platform-all {
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (width <= 30.06125rem) {
+  .platform__platform-all {
+    padding: 1.875rem 0.75rem;
+  }
 }
 .platform__title {
   font-size: clamp(1.875rem, 1.475rem + 2vw, 3.875rem);
