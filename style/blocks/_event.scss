@@ -114,11 +114,11 @@
             flex-direction: column;
             row-gap: rem(15);
 
-            &-checkbox {
+            &-lable {
                 display: inline-flex;
                 align-items: center;
-                font-size: rem(12);
                 column-gap: rem(10);
+                font-size: rem(12);
             }
 
             &-input[type="checkbox"]:checked + &-custom {

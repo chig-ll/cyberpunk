@@ -581,12 +581,12 @@ a[class] {
   flex-direction: column;
   row-gap: 0.9375rem;
 }
-.event__form-submit-checkbox {
+.event__form-submit-lable {
   display: inline-flex;
   align-items: center;
-  font-size: 0.75rem;
   -moz-column-gap: 0.625rem;
        column-gap: 0.625rem;
+  font-size: 0.75rem;
 }
 .event__form-submit-input[type=checkbox]:checked + .event__form-submit-custom {
   background: url("../icons/icon-flag.svg") center/contain no-repeat;
