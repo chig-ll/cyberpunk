@@ -9,7 +9,7 @@
         background: url('../images/section-banner.jpg') center / cover no-repeat;
 
         @include mobile-s {
-            background: url('../images/section-banner-mob.png') center / cover no-repeat;
+            background: url('../images/section-banner-mob.jpg') top / 100% 97% no-repeat;
         }
     }
 
