@@ -105,25 +105,50 @@
                 </div>
             </div>
             <div class="info__images">
-                <img class="info__image" 
-                     src="./images/info/Rectangle-3.jpg" 
-                     alt="" 
-                     width="460" height="196"
-                     loading="lazy"
-                />
+                <picture class=" info__images-pecture">
+                    <source class="info__images-source"
+                            srcset="./images/info/rectangle2_mobile.avif"
+                            media="(max-width: 767px)"
+                            type="image/avif"
+                    />
+                    <img class="info__image" 
+                         src="./images/info/Rectangle-3.jpg" 
+                         alt="" width="460" height="196"
+                         loading="lazy"
+                    />
+                </picture>
 
-                <img class="info__image" 
-                     src="./images/info/Rectangle-2.jpg" 
-                     alt="" width="460" height="196"
-                     loading="lazy"
-                />
+                <picture class=" info__images-pecture">
+                    <source class="info__images-source"
+                            srcset="./images/info/rectangle_mobile.avif"
+                            media="(max-width: 767px)"
+                            type="image/avif"
+                    />
+                    <img class="info__image" 
+                         src="./images/info/Rectangle-2.jpg" 
+                         alt="" width="460" height="196"
+                         loading="lazy"
+                    />
+                </picture>
 
-                <img class="info__image info__image--big" 
-                     src="./images/info/Rectangle-1.jpg" 
-                     alt="" 
-                     width="788" height="424" 
-                     loading="lazy"
-                />
+                <picture class="info__images-pecture info__images-pecture--big">
+                    <source class="info__images-source"
+                            srcset="./images/info/city_mobile.avif"
+                            media="(max-width: 767px)"
+                            type="image/avif"
+                    />
+                    <source class="info__images-source"
+                            srcset="./images/info/city_tablet.avif"
+                            media="(max-width: 1024px)"
+                            type="image/avif"
+                    />
+                    <img class="info__image info__image--big" 
+                         src="./images/info/city_desktop.avif" 
+                         alt="city" 
+                         width="788" height="424" 
+                         loading="lazy"
+                    />
+                </picture>
             </div>
         </div>
     </section>

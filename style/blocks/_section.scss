@@ -5,10 +5,16 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 100vh;
+        min-height: 100vh;
         background: url('../images/section-banner.jpg') center / cover no-repeat;
 
-        @include mobile-s {
+        @media (width <= 767px) {
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: auto 95%;
+        }
+
+        @media (width <= 320px) {
             background: url('../images/section-banner-mob.jpg') top / 100% 97% no-repeat;
         }
     }
