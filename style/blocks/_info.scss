@@ -1,10 +1,6 @@
 @use '../helpers' as *;
 
 .info {
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    row-gap: rem(70);
     padding-block: rem(70);
 
     &__head {
@@ -12,6 +8,7 @@
         flex-direction: column;
         align-items: start;
         row-gap: rem(25);
+        margin-bottom: rem(70);
     }
 
     &__title {
@@ -47,7 +44,8 @@
         }
 
         @media (width <=768px) {
-          grid-template-columns: 1fr;      
+            display: contents;
+            grid-template-columns: 1fr;      
         }
 
         &-pecture {

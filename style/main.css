@@ -381,7 +381,6 @@ a[class] {
 @media (width <= 767px) {
   .section__banner {
     background-position: top;
-    background-repeat: no-repeat;
     background-size: auto 95%;
   }
 }
@@ -493,10 +492,6 @@ a[class] {
 }
 
 .info {
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-  row-gap: 4.375rem;
   padding-block: 4.375rem;
 }
 .info__head {
@@ -504,6 +499,7 @@ a[class] {
   flex-direction: column;
   align-items: start;
   row-gap: 1.5625rem;
+  margin-bottom: 4.375rem;
 }
 .info__title {
   font-size: clamp(1.875rem, 1.475rem + 2vw, 3.875rem);
@@ -538,6 +534,7 @@ a[class] {
 }
 @media (width <= 768px) {
   .info__images {
+    display: contents;
     grid-template-columns: 1fr;
   }
 }
