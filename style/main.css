@@ -383,7 +383,7 @@ a[class] {
     background-size: auto 95%;
   }
 }
-@media (width <= 320px) {
+@media (width < 321px) {
   .section__banner {
     background: url("../images/section-banner-mob.jpg") top/100% 97% no-repeat;
   }
