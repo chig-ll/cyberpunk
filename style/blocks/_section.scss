@@ -13,7 +13,7 @@
             background-size: auto 95%;
         }
 
-        @media (width <= 320px) {
+        @media (width < 321px) {
             background: url('../images/section-banner-mob.jpg') top / 100% 97% no-repeat;
         }
     }
@@ -31,7 +31,18 @@
             translate: -50% -50%;
             top: -4%;
             left: 50%;
-            background: url(../images/decor.png) center / cover no-repeat;
+            background: url(../images/sec_event/decor.png) center / cover no-repeat;
+        }
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: rem(70);
+            position: absolute;
+            translate: -50% -50%;
+            bottom: -13%;
+            right: -50%;
+            background: url(../images/sec_event/decor-two.png) center / cover no-repeat;
         }
     }
 }
