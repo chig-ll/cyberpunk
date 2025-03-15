@@ -19,7 +19,8 @@
     }
 
     &__event {
-        margin-top: rem(70);
+        margin-block: rem(70);
+        padding-bottom: rem(70);
         position: relative;
         background-color: var(--color-dark);
 

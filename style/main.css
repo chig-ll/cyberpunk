@@ -390,7 +390,8 @@ a[class] {
   }
 }
 .section__event {
-  margin-top: 4.375rem;
+  margin-block: 4.375rem;
+  padding-bottom: 4.375rem;
   position: relative;
   background-color: var(--color-dark);
 }
@@ -680,7 +681,6 @@ a[class] {
   display: flex;
   flex-direction: column;
   row-gap: 0.9375rem;
-  padding-bottom: 4.375rem;
 }
 .event__form-submit-lable {
   display: inline-flex;
