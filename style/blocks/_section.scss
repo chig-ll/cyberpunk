@@ -18,9 +18,12 @@
         }
     }
 
+    &__info {
+        padding-block: rem(70);
+    }
+
     &__event {
-        margin-block: rem(70);
-        padding-bottom: rem(70);
+        padding-block: rem(70);
         position: relative;
         background-color: var(--color-dark);
 
@@ -30,7 +33,7 @@
             height: rem(70);
             position: absolute;
             translate: -50% -50%;
-            top: -4%;
+            top: 3%;
             left: 50%;
             background: url(../images/sec_event/decor.png) center / cover no-repeat;
         }
@@ -41,7 +44,7 @@
             height: rem(70);
             position: absolute;
             translate: -50% -50%;
-            bottom: -13%;
+            bottom: -4%;
             right: -50%;
             background: url(../images/sec_event/decor-two.png) center / cover no-repeat;
         }

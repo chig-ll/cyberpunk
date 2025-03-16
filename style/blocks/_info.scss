@@ -1,8 +1,6 @@
 @use '../helpers' as *;
 
 .info {
-    padding-block: rem(70);
-
     &__head {
         display: flex;
         flex-direction: column;

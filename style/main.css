@@ -389,9 +389,11 @@ a[class] {
     background: url("../images/section-banner-mob.jpg") top/100% 97% no-repeat;
   }
 }
+.section__info {
+  padding-block: 4.375rem;
+}
 .section__event {
-  margin-block: 4.375rem;
-  padding-bottom: 4.375rem;
+  padding-block: 4.375rem;
   position: relative;
   background-color: var(--color-dark);
 }
@@ -401,7 +403,7 @@ a[class] {
   height: 4.375rem;
   position: absolute;
   translate: -50% -50%;
-  top: -4%;
+  top: 3%;
   left: 50%;
   background: url(../images/sec_event/decor.png) center/cover no-repeat;
 }
@@ -411,7 +413,7 @@ a[class] {
   height: 4.375rem;
   position: absolute;
   translate: -50% -50%;
-  bottom: -13%;
+  bottom: -4%;
   right: -50%;
   background: url(../images/sec_event/decor-two.png) center/cover no-repeat;
 }
@@ -502,9 +504,6 @@ a[class] {
   color: var(--color-dark);
 }
 
-.info {
-  padding-block: 4.375rem;
-}
 .info__head {
   display: flex;
   flex-direction: column;
@@ -584,6 +583,9 @@ a[class] {
   }
 }
 
+.event {
+  padding-block: 0.9375rem 4.375rem;
+}
 .event__grid {
   display: grid;
   grid-template-columns: 36% 1fr;
@@ -623,6 +625,7 @@ a[class] {
 @media (width <= 1024px) {
   .event__images {
     flex-direction: column;
+    justify-content: end;
     grid-row: 1/3;
   }
 }
@@ -641,6 +644,11 @@ a[class] {
 .event__title {
   margin-bottom: 2.5rem;
 }
+@media (width <= 1024px) {
+  .event__title {
+    margin-bottom: 1.5625rem;
+  }
+}
 .event__title::before {
   content: "";
   display: inline-block;
@@ -649,6 +657,13 @@ a[class] {
   width: 8.25rem;
   height: 8.25rem;
   translate: 0 20%;
+}
+@media (width <= 1024px) {
+  .event__title::before {
+    display: block;
+    margin-right: 0rem;
+    margin-bottom: 1.875rem;
+  }
 }
 .event__description {
   max-width: 59.5rem;
