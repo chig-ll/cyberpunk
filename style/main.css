@@ -403,7 +403,7 @@ a[class] {
   height: 4.375rem;
   position: absolute;
   translate: -50% -50%;
-  top: 3%;
+  top: 2%;
   left: 50%;
   background: url(../images/sec_event/decor.png) center/cover no-repeat;
 }
@@ -597,12 +597,23 @@ a[class] {
     grid-template-columns: 1fr 1fr;
   }
 }
+@media (width <= 767px) {
+  .event__grid {
+    grid-template-columns: 1fr;
+  }
+}
 .event__head {
   grid-column: 1/3;
 }
 @media (width <= 1024px) {
   .event__head {
     grid-column: 1/2;
+  }
+}
+@media (width <= 767px) {
+  .event__head {
+    grid-column: 1/1;
+    grid-row: 2/2;
   }
 }
 .event__body {
@@ -617,6 +628,12 @@ a[class] {
     flex-direction: column;
   }
 }
+@media (width <= 767px) {
+  .event__body {
+    grid-column: 1/1;
+    grid-row: 3/3;
+  }
+}
 .event__images {
   display: flex;
   grid-column: 2/3;
@@ -629,8 +646,24 @@ a[class] {
     grid-row: 1/3;
   }
 }
+@media (width <= 767px) {
+  .event__images {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    -moz-column-gap: 1.875rem;
+         column-gap: 1.875rem;
+    flex-direction: row;
+    padding-top: 3.125rem;
+  }
+}
 .event__images-xbox {
   z-index: 400;
+}
+@media (width <= 767px) {
+  .event__images-xbox {
+    min-width: 130px;
+    min-height: 130px;
+  }
 }
 .event__images-playstation {
   z-index: 200;
@@ -639,6 +672,25 @@ a[class] {
 @media (width <= 1024px) {
   .event__images-playstation {
     margin-left: 0;
+  }
+}
+@media (width <= 767px) {
+  .event__images-playstation {
+    min-width: 130px;
+    min-height: 130px;
+  }
+}
+@media (width <= 767px) {
+  .event__images::before {
+    content: "";
+    display: block;
+    background: url(../images/stock.svg) center/cover no-repeat;
+    translate: 0 20%;
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    width: 4rem;
+    height: 4rem;
   }
 }
 .event__title {
@@ -654,15 +706,20 @@ a[class] {
   display: inline-block;
   margin-right: 2rem;
   background: url(../images/stock.svg) center/cover no-repeat;
+  translate: 0 20%;
   width: 8.25rem;
   height: 8.25rem;
-  translate: 0 20%;
 }
 @media (width <= 1024px) {
   .event__title::before {
     display: block;
     margin-right: 0rem;
     margin-bottom: 1.875rem;
+  }
+}
+@media (width <= 767px) {
+  .event__title::before {
+    display: none;
   }
 }
 .event__description {
